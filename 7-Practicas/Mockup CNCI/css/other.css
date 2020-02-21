@@ -1,0 +1,169 @@
+
+@font-face {
+    font-family: TipoLetra;
+    src:url(../fonts/AvenirLTStd-Light.otf);
+}
+body{
+	font-family:TipoLetra;
+}
+.navbar-fixed-top{
+	background-color:rgba(17, 62, 238,0.5);
+	height:14%;
+}
+.icon-bar{
+  background-color:rgba(0,0,0,0.5);
+}
+video {
+    /*
+    position:fixed;
+    min-width:100%;
+    min-height:100%;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index:-1;*/
+    -webkit-filter: grayscale();
+    -moz-filter: grayscale();
+}
+.video-section {
+    position: relative;
+    width: 100%;
+    max-height: 47em;
+    overflow:hidden;
+}
+.video-elemento {
+    width:100%;
+}
+.elemento {
+    position:absolute;
+    top:20%;
+    right:0;
+    left:0;
+    bottom:0;
+    color:white;
+}
+.seccion-cnci, .img-cnci{
+	width: 100%;
+  display: block;
+  position: relative;
+}
+.texto-1{
+  position: absolute;
+  top:15%;
+}
+.texto-2{
+  position: absolute;
+  right: 15%;
+  top:5%;
+  left: 15%;
+}
+.texto-3{
+  position: absolute;
+  right: 15%;
+  top:-1%;
+  left: 15%;
+  /*
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;*/
+  text-align: center;
+}
+li{
+    list-style: none;
+}
+footer{
+    background-color:rgba(238, 242, 239,0.5);
+    box-sizing: border-box;
+    height: 35em;
+}
+footer section{
+  padding: 5%;
+}
+@media (max-width: 768px){
+  .texto-2 .mensaje-2{
+    display: none !important;
+  }
+}
+@media (max-width: 750px){
+  .navbar-collapse{
+    background-color:rgba(17, 62, 238,0.5);
+    margin: 5%;
+  }
+  .navbar-collapse li a{
+    color:rgba(0,0,0,0.8);
+  }
+  .navbar-fixed-top{
+    background-color:rgba(17, 62, 238,0.5);
+    height:25%;
+  }
+}
+@media (max-width: 650px){
+  h2,h3,h4{
+    font-size: 5vh;
+  }
+  .texto-2 .mensaje-2{
+    display: none !important;
+  }
+  .navbar-fixed-top{
+    background-color:rgba(17, 62, 238,0.5);
+    height:25%;/*8%*/
+  }
+}
+/* media para modificar el nav */
+@media screen and (max-width: 550px) {
+    h2,h3,h4{
+    font-size: 3vh;
+  }
+  .navbar-fixed-top{
+    background-color:rgba(17, 62, 238,0.5);
+    height:14%;
+  }
+  .navbar-collapse{
+    background-color:rgba(17, 62, 238,0.5);
+    margin: 10.5%;
+  }
+  .navbar-collapse li a{
+    color:rgba(0,0,0,0.8);
+  }
+  .elemento img{
+    display: none !important;
+  }
+  .texto-1{
+    top:-3%;
+    font-size: 13.9px;
+  }
+  .texto-1 h3, .texto-2 .mensaje{
+    display: none !important;
+  }
+  .texto-2 .mensaje-2{
+    display:inline;
+  }
+}
+
+
+/*página de las carreras*/
+.carrera{
+    width: 40%;
+}
+.nosotros, .contacto{
+    margin-top: 10%;
+}
+/*página Acerca de...*/
+@media(max-width: 1024px){
+  .nosotros{
+    margin-top: 15%;
+  }
+}
+@media(max-width: 650px){
+  .nosotros{
+    margin-top: 15%;
+  }
+}
+@media(max-width: 550px){
+  .nosotros{
+    margin-top: 20%;
+  }
+}

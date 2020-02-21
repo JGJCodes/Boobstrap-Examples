@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+      <style>
+          .slider {
+              background: url("img/bg-3.jpg");
+              height: 100vh;
+              background-size: cover;
+              background-position: center;
+          }
+      </style>
+
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="0">
+      <!--Titulo de la pagina web-->
+      <section id="image" class="container-fluid slider d-flex justify-content-center align-items-center">
+          <h1 class="display-4">Bootstrap 4!</h1>
+      </section>
+
+      <!--Carousel-->
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+              <div class="carousel-item active" style="height: 100vh">
+                  <img class="d-block w-100" src="img/bg-1.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Bootstrap 4!</h3>
+                      <p>This is a longer card with supporting text below as a natural lead-in to additional content.
+                      This content is a little bit longer.</p>
+                  </div>
+              </div>
+              <div class="carousel-item" style="height: 100vh">
+                  <img class="d-block w-100" src="img/bg-2.png" alt="Second slide">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Bootstrap 4!</h3>
+                      <p>This is a longer card with supporting text below as a natural lead-in to additional content.
+                      This content is a little bit longer.</p>
+                  </div>
+              </div>
+              <div class="carousel-item" style="height: 100vh">
+                  <img class="d-block w-100" src="img/bg-3.jpg" alt="Third slide">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Bootstrap 4!</h3>
+                      <p>This is a longer card with supporting text below as a natural lead-in to additional content.
+                      This content is a little bit longer.</p>
+                  </div>
+              </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+          </a>
+      </div>
+
+      <!--Menu responsivo de la pagina-->
+      <nav id="navbar" class="navbar navbar-inverse bg-inverse navbar-toggleable-sm sticky-top">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="sitio web.html">
+              <img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="Logo Bootstrap" />
+              Bootstrap
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <div class="navbar-nav nav-pills mr-auto ml-auto text-center">
+                  <a class="nav-item nav-link " href="#image">Image</a>
+                  <a class="nav-item nav-link" href="#carousel">Carousel</a>
+                  <a class="nav-item nav-link " href="#cards">Cards</a>
+                  <a class="nav-item nav-link " href="#jumbotron">Jumbotron</a>
+                  <div class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Otros
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#form">Forms</a>
+                          <a class="dropdown-item" href="#fonts">Fonts</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="d-flex flex-row justify-content-center">
+                  <a class="btn btn-primary mr-2 " href="#">F</a>
+                  <a class="btn btn-danger " href="#">Y</a>
+              </div>
+          </div>
+      </nav>
+
+      <!--Tarjetas o Cards-->
+      <section id="cards" class="container mt-5 pt-5">
+          <div class="card-deck">
+              <div class="card">
+                  <img class="card-img-top img-fluid" src="img/bg-1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. 
+                      This content is a little bit longer.</p>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" >
+                          Link
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      Toggle a working modal demo by clicking the button below. It will slide down and fade in from the top of the page.
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary" data-dismiss="modal" >Close</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <img class="card-img-top img-fluid" src="img/bg-2.png" alt="Card image cap">
+                  <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. 
+                      This content is a little bit longer.</p>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+                          Link
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <h5>Popover in a modal</h5>
+                                      <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
+                                      <hr>
+                                      <h5>Tooltips in a modal</h5>
+                                      <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                  <img class="card-img-top img-fluid" src="img/bg-3.jpg" alt="Card image cap">
+                  <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. 
+                      This content is a little bit longer.</p>
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+                          Link
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <form>
+                                          <div class="form-group">
+                                              <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                              <input type="text" class="form-control" id="recipient-name">
+                                          </div>
+                                          <div class="form-group">
+                                              <label for="message-text" class="col-form-label">Message:</label>
+                                              <textarea class="form-control" id="message-text"></textarea>
+                                          </div>
+                                      </form>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Send message</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+              </div>
+          </div>
+      
+      </section>
+
+      <!--Jumbotron-->
+      <div id="jumbotron" class="jumbotron mt-5 bg-inverse text-white rounded-0">
+          <div class="container">
+              <h1 class="display-3">Hello, world!</h1>
+              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+              <hr class="my-4">
+              <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+              <p class="lead">
+                  <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Learn more</a>
+              </p>
+          </div>
+      </div>
+
+      <!--Formulario-->
+      <section id="form" class="container">
+          <h3 class="text-uppercase text-center">Formulario de contacto</h3>
+          <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+          </p>
+
+          <form action="" class="form-inline justify-content-center flex-column flex-md-row">
+              <div class="form-group my-2">
+                  <label for="" class="mx-2 hidden-sm-down">Nombre:</label>
+                  <input type="text" placeholder="Escribe tu nombre aqui" class="form-control" />
+              </div>
+              <div class="form-group my-2">
+                  <label for="" class="mx-2 hidden-sm-down">Email:</label>
+                  <input type="email" placeholder="Escribe tu email" class="form-control" />
+              </div>
+              <div class="form-group mx-2 my-2">
+                  <button class="btn btn-danger" type="submit">Enviar</button>
+              </div>
+          </form>
+     
+      </section>
+
+      <!--Texto en columnas-->
+      <section id="fonts" class="container mt-5 pt-5">
+          <p class="text-center text-uppercase font-italic font-weight-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero</p>
+          <p class="p-5 text-justify text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+          </p>
+          <p class="bg-primary text-white p-4 text-justify w-25 float-left mr-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+          </p>
+          <p  class="text-justify" >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+          </p>
+          <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+          </p>
+          <p class=" text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, vero.
+          </p>
+      </section>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

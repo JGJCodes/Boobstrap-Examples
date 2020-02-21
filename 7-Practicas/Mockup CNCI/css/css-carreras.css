@@ -1,0 +1,36 @@
+
+.seccion-1{
+	margin-top: 8%;
+}
+@media (max-width: 1024px){
+	.seccion-1{
+		margin-top:10%;
+	}
+	.text-justify + .seccion-1{
+		margin-top: 10%;
+	}
+}
+@media (max-width: 768px){
+	.seccion-1{
+		margin-top:19%;
+	}
+	.text-justify + .seccion-1{
+		margin-top: 5%;
+	}
+}
+@media (max-width: 650px){
+	.seccion-1{
+		margin-top:14%;
+	}
+	.text-justify + .seccion-1{
+		margin-top: 5%;
+	}
+}
+@media screen and (max-width: 550px) {
+	.seccion-1{
+		margin-top:25%;
+	}
+	.text-justify + .seccion-1{
+		margin-top: 5%;
+	}
+}
